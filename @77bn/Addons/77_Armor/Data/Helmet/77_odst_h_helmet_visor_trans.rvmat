@@ -1,13 +1,9 @@
-class StageTI
-{
-	texture="#(argb,8,8,3)color(0,0,0,0)";
-};
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
-forcedDiffuse[]={0,0,0,0};
-emmisive[]={0,0,0,1};
-specular[]={1,1,1,0};
-specularPower=1000;
+forcedDiffuse[]={0,0,0,1};
+emmisive[]={0,0,0,0};
+specular[]={0.029999999,0.029999999,0.029999999,1};
+specularPower=70;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
@@ -48,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="77_Armor\Data\Helmet\77_odst_helmet_visor_as.paa";
+	texture="77_Armor\Data\Helmet\77_odst_h_helmet_visor_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="77_Armor\Data\Helmet\77_odst_helmet_visor_smdi.paa";
+	texture="77_Armor\Data\Helmet\77_odst_h_helmet_visor_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -72,7 +68,7 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,32,128,1)fresnel(2,0.81)";
+	texture="#(ai,64,64,1)fresnel(7.1,2.8)";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -84,8 +80,8 @@ class Stage6
 };
 class Stage7
 {
-	useWorldEnvMap="true";
 	texture="a3\data_f\env_land_co.paa";
+	useWorldEnvMap="true";
 	uvSource="tex";
 	class uvTransform
 	{
