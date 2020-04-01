@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="77_Armor\Data\Helmet\77_odst_helmet_visor_as.paa";
+	texture="77_Armor\Data\Helmet\77_odst_h_helmet_visor_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="77_Armor\Data\Helmet\77_odst_helmet_visor_smdi.paa";
+	texture="77_Armor\Data\Helmet\77_odst_h_helmet_visor_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
