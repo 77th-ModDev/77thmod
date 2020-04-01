@@ -245,7 +245,7 @@ class cfgWeapons
 		scope=2;
 		author="77 SMU/ODST";
 		displayName="[77th] Combat Uniform (Gray)";
-		picture="\optre_unsc_units\army\icons\army_uniform_DES";
+		picture="\optre_unsc_units\army\icons\odst_uniform.paa";
 		CBRN_protection=1;
 		class ItemInfo: UniformItem
 		{
@@ -284,21 +284,23 @@ class cfgWeapons
         scope = 2;
         displayName = "[77th] CH252D Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
-		picture="";
+		picture="\optre_unsc_units\army\icons\odst_helmet.paa";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[]=
 		{
-			"\77_Armor\Data\Helmet\77_odst_helmet.rvmat"
+			"\77_Armor\Data\Helmet\77_odst_helmet.rvmat","\77_Armor\Data\Helmet\77_odst_helmet_visor.rvmat",
 		};
-		hiddenSelectionsTextures[] = {"\77_Armor\Data\Helmet\77_odst_helmet_co.paa","\77_Armor\Data\Helmet\77_odst_helmet_visor.paa"};
+		hiddenSelectionsTextures[] = {"\77_Armor\Data\Helmet\77_odst_helmet_co.paa","\77_Armor\Data\Helmet\77_odst_helmet_visor_co.paa"};
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.36;
 	};
-        class 77th_ODST_Helmet_dp: 77th_ODST_Helmet
+		class OPTRE_UNSC_CH252D_Helmet_dp;
+        class 77th_ODST_Helmet_dp: OPTRE_UNSC_CH252D_Helmet_dp
     {
         Scope=1;
-        hiddenSelections[] = {"camo","camo2","camo3"};
-        hiddenSelectionsTextures[] = {"\77_Armor\Data\Helmet\77_odst_helmet_co.paa",""};
+        hiddenSelections[] = {"camo","camo2"};
+        hiddenSelectionsTextures[] = {"\77_Armor\Data\Helmet\77_odst_helmet_co.paa","\77_Armor\Data\Helmet\77_odst_helmet_visor_ca.paa"};
+		hiddenSelectionsMaterials[]= {"\77_Armor\Data\Helmet\77_odst_helmet.rvmat","\77_Armor\Data\Helmet\77_odst_helmet_visor_trans.rvmat"};
     };	
 	
 		//HARDENED
@@ -309,21 +311,22 @@ class cfgWeapons
         scope = 2;
         displayName = "[77th] CH252D Helmet - Hardened";
 		optreVarietys[] = {"_dp","","_broken"};
-		picture="";
+		picture="\optre_unsc_units\army\icons\odst_helmet.paa";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[]=
 		{
-			"\77_Armor\Data\Helmet\77_odst_helmet.rvmat"
+			"\77_Armor\Data\Helmet\77_odst_helmet.rvmat","\77_Armor\Data\Helmet\77_odst_helmet_visor.rvmat",
 		};
-		hiddenSelectionsTextures[] = {"\77_Armor\Data\Helmet\77_odst_h_helmet_co.paa","\77_Armor\Data\Helmet\77_odst_h_helmet_visor"};
+		hiddenSelectionsTextures[] = {"\77_Armor\Data\Helmet\77_odst_h_helmet_co.paa","\77_Armor\Data\Helmet\77_odst_h_helmet_visor_co.paa"};
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.36;
 	};
-        class 77th_ODST_h_Helmet_dp: 77th_ODST_h_Helmet
+        class 77th_ODST_h_Helmet_dp: OPTRE_UNSC_CH252D_Helmet_dp
     {
         Scope=1;
-        hiddenSelections[] = {"camo","camo2","camo3"};
-        hiddenSelectionsTextures[] = {"\77_Armor\Data\Helmet\77_odst_h_helmet_co.paa",""};
+         hiddenSelections[] = {"camo","camo2"};
+        hiddenSelectionsTextures[] = {"\77_Armor\Data\Helmet\77_odst_h_helmet_co.paa","\77_Armor\Data\Helmet\77_odst_h_helmet_visor_ca.paa"};
+		hiddenSelectionsMaterials[]= {"\77_Armor\Data\Helmet\77_odst_helmet.rvmat","\77_Armor\Data\Helmet\77_odst_helmet_visor_trans.rvmat"};
     };	
 	
 	/*
@@ -336,7 +339,7 @@ class cfgWeapons
         dlc="77";
 		scope = 1;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Basic)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
        hiddenSelections[] = {
@@ -520,7 +523,7 @@ class cfgWeapons
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Rifleman)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -701,7 +704,7 @@ class cfgWeapons
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (CQB)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";    
         hiddenSelections[] = {
@@ -882,7 +885,7 @@ class cfgWeapons
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Grenadier)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         
@@ -1064,7 +1067,7 @@ class cfgWeapons
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Engineer)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -1245,7 +1248,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (AA/AT)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -1426,7 +1429,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Automatic Rifleman)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelectionsMaterials[]=
@@ -1607,7 +1610,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Sniper)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -1788,7 +1791,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Sniper/Ghillie)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -1969,7 +1972,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Spotter)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -2150,7 +2153,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Spotter/Ghillie)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -2331,7 +2334,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (SARC)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelectionsMaterials[]=
@@ -2512,7 +2515,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (EL/TL)";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -2696,7 +2699,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Rifleman) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -2877,7 +2880,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (CQB) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";    
         hiddenSelections[] = {
@@ -3058,7 +3061,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Grenadier) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         
@@ -3240,7 +3243,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Engineer) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -3421,7 +3424,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (AA/AT) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -3602,7 +3605,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Automatic Rifleman) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -3783,7 +3786,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Sniper) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -3964,7 +3967,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Sniper/Ghillie) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -4145,7 +4148,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Spotter) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -4326,7 +4329,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (Spotter/Ghillie) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
@@ -4507,7 +4510,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (SARC) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelectionsMaterials[]=
@@ -4688,7 +4691,7 @@ hiddenSelectionsMaterials[]=
         dlc="77";
 		scope = 2;
         author="77 SMU/ODST";
-        picture="";
+        picture="\optre_unsc_units\army\icons\odst_vest.paa";
         displayName="[77th] M52D Body Armor (EL/TL) - Hardened";
         model = "\OPTRE_UNSC_Units\Army\armor.p3d";
         hiddenSelections[] = {
