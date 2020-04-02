@@ -8,7 +8,18 @@ class CfgPatches
         };
         weapons[]=
         {
-            
+			"77_BDU_V_Base",
+			"77_BDU_GRAY",
+			"77_BDU_GRAY_slim",
+			"77th_ODST_Helmet",
+			"77th_ODST_Helmet_dp",
+			"77th_ODST_m_Helmet",
+			"77th_ODST_m_Helmet_dp",
+			"77th_ODST_h_Helmet",
+			"77th_ODST_h_Helmet_dp",
+			"77th_ODST_hm_Helmet",
+			"77th_ODST_hm_Helmet_dp",
+			"77th_ODST_Vest",
         };
         requiredVersion=0.1;
         requiredAddons[]=
