@@ -15,8 +15,8 @@ class CfgPatches
 		};
 		ammo[]=
 		{
-			"OPTRE_B_127x40_NARQ",
-			"OPTRE_B_145x114_NARQ",
+			"NarqDart",
+			"NarqDart_S",
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -64,7 +64,11 @@ class CfgAmmo
 			distance=150;
 		};
 	};
-};
+	class NarqDart_S: NarqDart
+	{
+		caliber=0.4;
+	};
+}; 
 class CfgMagazines
 {	
 	class OPTRE_8Rnd_127x40_Mag;
@@ -89,7 +93,7 @@ class CfgMagazines
 		author="77 SMU/ODST";
 		scope=2;
 		scopeArsenal=2;
-		ammo="NarqDart";
+		ammo="NarqDart_S";
 		displayname="4Rnd 14.5x114mm NARQ Dart Magazine";
 		displaynameshort="NARQ Darts";
 		descriptionshort="4 Round Magazine <br>14.5x114mm<br> Tranquilizers";
