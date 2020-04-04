@@ -61,8 +61,23 @@ class OPTRE_M6C;
 			"OPTRE_12Rnd_127x40_Mag_NARQ"
 		};
 	};
+/* class OPTRE_SRS99_Scope
+{
+ace_scopeZeroRange = 100;	
+ace_ScopeHeightAboveRail = 3.69248;
+ace_scopeAdjust_vertical[] = {-10, 50};
+ace_scopeAdjust_horizontal[] = {-10, 10};
+ace_scopeAdjust_verticalIncrement = 0.1;
+ace_scopeAdjust_horizontalIncrement = 0.1;
+}; */
 class OPTRE_SRS99D
 {
+   /*     ACE_barrelTwist = 187.9;
+        ACE_barrelLength = 781.4;
+        ACE_twistDirection = 1;
+		ACE_RailHeightAboveBore = 1.98812;
+		ACE_IronSightBaseAngle = -0.00601782; */
+
 	magazines[]=
 		{
 			"OPTRE_4Rnd_145x114_APFSDS_Mag",

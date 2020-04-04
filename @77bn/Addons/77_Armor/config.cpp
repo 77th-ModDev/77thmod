@@ -8,18 +8,66 @@ class CfgPatches
         };
         weapons[]=
         {
-			"77_BDU_V_Base",
 			"77_BDU_GRAY",
-			"77_BDU_GRAY_slim",
+			"77_BDU_GRAY_Slim",
+			"77_BDU_H_GRAY",
+			"77_BDU_H_GRAY_Slim	",
 			"77th_ODST_Helmet",
 			"77th_ODST_Helmet_dp",
 			"77th_ODST_m_Helmet",
 			"77th_ODST_m_Helmet_dp",
 			"77th_ODST_h_Helmet",
-			"77th_ODST_h_Helmet_dp",
+			"77th_ODST_h_Helmet_dp	",
 			"77th_ODST_hm_Helmet",
 			"77th_ODST_hm_Helmet_dp",
-			"77th_ODST_Vest",
+			"77th_ODST_VestR",
+			"77th_ODST_m_VestR",
+			"77th_ODST_h_VestR",
+			"77th_ODST_hm_VestR",
+			"77th_ODST_VestB",
+			"77th_ODST_m_VestB",
+			"77th_ODST_h_VestB",
+			"77th_ODST_hm_VestB		",
+			"77th_ODST_VestG",
+			"77th_ODST_m_VestG",
+			"77th_ODST_h_VestG",
+			"77th_ODST_hm_VestG",
+			"77th_ODST_VestE",
+			"77th_ODST_m_VestE",
+			"77th_ODST_h_VestE",
+			"77th_ODST_hm_VestE",
+			"77th_ODST_VestAT",
+			"77th_ODST_m_VestAT",
+			"77th_ODST_h_VestAT",
+			"77th_ODST_hm_VestAT",
+			"77th_ODST_VestAR",
+			"77th_ODST_m_VestAR",
+			"77th_ODST_h_VestAR",
+			"77th_ODST_hm_VestAR",
+			"77th_ODST_VestSn",
+			"77th_ODST_m_VestSn",
+			"77th_ODST_h_VestSn",
+			"77th_ODST_hm_VestSn",
+			"77th_ODST_VestSp",
+			"77th_ODST_m_VestSp",
+			"77th_ODST_h_VestSp",
+			"77th_ODST_hm_VestSp",
+			"77th_ODST_VestSpG",
+			"77th_ODST_m_VestSpG",
+			"77th_ODST_h_VestSpG",
+			"77th_ODST_hm_VestSpG",
+			"77th_ODST_VestM",
+			"77th_ODST_m_VestM",
+			"77th_ODST_h_VestM",
+			"77th_ODST_hm_VestM",
+			"77th_ODST_VestSK",
+			"77th_ODST_m_VestSK",
+			"77th_ODST_h_VestSK",
+			"77th_ODST_hm_VestSK",
+			"77th_ODST_VestEL",
+			"77th_ODST_m_VestEL",
+			"77th_ODST_h_VestEL",
+			"77th_ODST_hm_VestEL",	
         };
         requiredVersion=0.1;
         requiredAddons[]=
@@ -199,8 +247,8 @@ class CfgVehicles
 		{
 			"camo",
 			"camo2",
-			"insignia",
-			"clan",
+			//"insignia",
+			//"clan",
 			"A_SlimLeg"
 		};
 		hiddenSelectionsTextures[]=
@@ -216,11 +264,42 @@ class CfgVehicles
 		{
 			"camo",
 			"camo2",
-			"insignia",
-			"clan",
+			//"insignia",
+			//"clan",
 			"A_BaseLeg"
 		};
 		uniformclass="77_BDU_V_GRAY_Slim";
+	};
+	class 77_BDU_H_GRAY: 77_BDU_V_Base
+	{
+		scope=1;
+		model="\OPTRE_UNSC_Units\Army\uniform";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			//"insignia",
+			//"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"77_Armor\Data\Uniforms\77_BDU_H_GRAY_CO",
+			"77_Armor\Data\Uniforms\77_BDU_H_GRAY_CO"
+		};
+		uniformclass="77_BDU_H_GRAY";
+	};
+		class  77_BDU_H_GRAY_Slim: 77_BDU_H_GRAY
+	{
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			//"insignia",
+			//"clan",
+			"A_BaseLeg"
+		};
+		uniformclass="77_BDU_H_GRAY_Slim";
 	};
 };
 class CfgAddons
@@ -276,7 +355,32 @@ class cfgWeapons
 			uniformClass="77_BDU_V_GRAY_Slim";
 		};
 	};
-	
+	class 77_BDU_H_GRAY: 77_BDU_GRAY
+	{
+		dlc="77";
+		scope=2;
+		author="77 SMU/ODST";
+		displayName="[77th] Combat Uniform (Gray) - Hardened";
+		picture="\optre_unsc_units\army\icons\odst_uniform.paa";
+		CBRN_protection=1;
+		class ItemInfo: UniformItem
+		{
+			containerClass="Supply100";
+			mass=40;
+			uniformType="Neopren";
+			uniformModel="";
+			uniformClass="77_BDU_H_GRAY";
+		};
+	};
+	class 77_BDU_H_GRAY_Slim: 77_BDU_GRAY
+	{
+		scope=2;
+		displayName="[77th] Combat Uniform (Gray) - Slim/Hardened";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="77_BDU_H_GRAY_Slim";
+		};
+	};
 	/*
 	#HELMETS
 	*/
