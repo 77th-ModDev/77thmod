@@ -28,6 +28,7 @@ class CfgFaces
 	{
 		class Default;
 		class WhiteHead_01;
+		class Custom;
 		class AfricanHead_01;
 		class AsianHead_A3_01;
 		class GreekHead_A3_01;
@@ -50,6 +51,25 @@ class CfgFaces
 			materialHL="\77_heads\data\marco\hl_marco.rvmat";
 			textureHL2="\77_heads\data\marco\hl_marco_co.paa";
 			materialHL2="\77_heads\data\marco\hl_marco.rvmat";
+		};
+		class 77_forsell_A3: WhiteHead_01
+		{
+			displayname="Forsell";
+			texture="\77_heads\data\forsell\forsell_co.paa";
+			head="NATOHead_A3";
+			identityTypes[]=
+			{
+				"Head_Euro"
+			};
+			author="77 SMU/ODST";
+			material="\77_heads\data\forsell\forsell.rvmat";
+			disabled=0;
+			materialWounded1="A3\characters_F_EPB\Heads\Data\m_IG_leader_injury.rvmat";
+			materialWounded2="A3\characters_F_EPB\Heads\Data\m_IG_leader_injury.rvmat";
+			textureHL="\77_heads\data\forsell\hl_forsell_co.paa";
+			materialHL="\77_heads\data\forsell\hl_forsell.rvmat";
+			textureHL2="\77_heads\data\forsell\hl_forsell_co.paa";
+			materialHL2="\77_heads\data\forsell\hl_forsell.rvmat";
 		};
 	};
 };
