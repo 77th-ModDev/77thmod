@@ -1,0 +1,1 @@
+These scripts are heavily derived by the script used in the mod Complimentary Police Weapons.
