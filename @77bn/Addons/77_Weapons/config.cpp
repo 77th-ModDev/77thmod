@@ -86,7 +86,40 @@ class OPTRE_SRS99D
 			"OPTRE_4Rnd_145x114_Mag_NARQ",
 		};
 };
+class ACE_Vector;
+class OPTRE_Vector: ACE_Vector
+	{
+		author="77 SMU/ODST";
+		displayName="[77th] Vector 2551";
+		scope = 2;
+		model = "\OPTRE_Weapons\items\smartfinder.p3d";
+		descriptionShort="Smartlink-enabled Rangefinder";
+		opticsZoomMax = 0.05;
+		opticsZoomInit = 0.25;
+		opticsZoomMin = 0.01;
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI",
+		};
+		class CBA_ScriptedOptic
+		{
+			reticleTexture="77_Weapons\data\Vector\Reticles\optre_vector_reticle_ca.paa";
+			reticleTextureSize=1.026;
+			bodyTexture="77_Weapons\data\Vector\Reticles\optre_vector_body_co.paa";
+			bodyTextureSize=1.25;
+			reticleSafezoneSize=1;
+			hidePeripheralVision=1;
+			opticsPPEffects[]=
+			{
+				"ace_vector_OpticsRadBlur1"
+			};
+		};
+		weaponInfoType="ACE_RscOptics_vector";
+	};
 };
+
 class Extended_PreInit_EventHandlers
 {
 	class 77_MC_Weapons

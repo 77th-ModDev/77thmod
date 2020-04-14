@@ -301,6 +301,173 @@ class CfgVehicles
 		};
 		uniformclass="77_BDU_H_GRAY_Slim";
 	};
+//BACKPACKS
+
+//PARACHUTE BASE
+class Steerable_Parachute_F;
+class 77_steerable_parachute: Steerable_Parachute_F
+{
+	author="77th SMU/ODST Bn";
+	_generalMacro="77_steerable_parachute";
+	scope=1;
+	displayName="[77th] Steerable Parachute";
+	model="77_Armor\Data\Backpacks\para.p3d";
+	hiddenSelections[]=
+		{
+			"camo"
+		};
+	hiddenSelectionsTextures[]=
+		{
+			"77_Armor\Data\Backpacks\77_odst_parachute_co.paa"
+		};
+};
+class B_Parachute;
+class 77_Parachute_Pack: B_Parachute
+{
+	displayName="[77th] Steerable Parachute";
+	author="77th SMU/ODST Bn";
+	scope=2;
+	model = "\OPTRE_unsc_units\army\rucksack.p3d";
+	hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
+	hiddenSelectionsTextures[] = {"77_Armor\Data\Backpacks\77_odst_compacks_co.paa",""};
+	ParachuteClass="77_steerable_parachute";
+};
+
+//RUCK
+class OPTRE_ILCS_Rucksack_Black;
+class 77_odst_hardruck: OPTRE_ILCS_Rucksack_Black
+	{
+		scope=2;
+		scopeCurator=2;
+		author="77bn SMU/ODST Bn";
+		displayName="[77th] ILCS Rucksack";
+		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
+		hiddenSelectionsMaterials[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"77_Armor\Data\Backpacks\77_odst_hardruck_co.paa"
+		};
+		ace_hasReserveParachute = 0;
+		//backpackSimulation = "ParachuteSteerable";
+		//ParachuteClass = "77_steerable_parachute";
+	};
+class 77_odst_h_hardruck: 77_odst_hardruck
+	{
+		scope=2;
+		scopeCurator=2;
+		author="77bn SMU/ODST Bn";
+		displayName="[77th] ILCS Rucksack - Hardened";
+		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
+		hiddenSelectionsMaterials[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"77_Armor\Data\Backpacks\77_odst_h_hardruck_co.paa"
+		};
+	};
+	class OPTRE_ILCS_Rucksack_Heavy;
+	class 77_odst_hardruck_hvy: OPTRE_ILCS_Rucksack_Heavy
+	{
+		scope=2;
+		scopeCurator=2;
+		author="77bn SMU/ODST Bn";
+		displayName="[77th] ILCS Rucksack (Heavy)";
+		hiddenSelections[] = {"camo1","biofoam"};
+		hiddenSelectionsMaterials[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"77_Armor\Data\Backpacks\77_odst_hardruck_co.paa"
+		};
+	};
+class 77_odst_h_hardruck_hvy: 77_odst_hardruck_hvy
+	{
+		scope=2;
+		scopeCurator=2;
+		author="77bn SMU/ODST Bn";
+		displayName="[77th] ILCS Rucksack (Heavy) - Hardened";
+		hiddenSelections[] = {"camo1","biofoam"};
+		hiddenSelectionsMaterials[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"77_Armor\Data\Backpacks\77_odst_h_hardruck_co.paa"
+		};
+	};
+class 77_odst_m_hardruck: 77_odst_hardruck
+	{
+		scope=2;
+		scopeCurator=2;
+		author="77bn SMU/ODST Bn";
+		displayName="[77th] ILCS Rucksack (SARC)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"AP_Heavy",
+		};
+		hiddenSelectionsMaterials[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"77_Armor\Data\Backpacks\77_odst_m_hardruck_co.paa"
+		};
+	};
+class 77_odst_hm_hardruck: 77_odst_hardruck
+	{
+		scope=2;
+		scopeCurator=2;
+		author="77bn SMU/ODST Bn";
+		displayName="[77th] ILCS Rucksack (SARC) - Hardened";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"AP_Heavy",
+		};
+		hiddenSelectionsMaterials[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"77_Armor\Data\Backpacks\77_odst_hm_hardruck_co.paa"
+		};
+	};
+	
+	//RADIO
+class OPTRE_ANPRC_521_Black;
+class 77_odst_anprc_521: OPTRE_ANPRC_521_Black
+	{
+		scope=2;
+		scopeCurator=2;
+		author="77bn SMU/ODST Bn";
+		displayName="[77th] AN/PRC-521";
+		hiddenSelections[] = {"camo","camo2","B_Medic","B_Addons"};
+		hiddenSelectionsMaterials[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"77_Armor\Data\Backpacks\77_odst_compacks_co.paa",
+			"77_Armor\Data\Backpacks\77_odst_compack_co.paa"
+		};
+	};
+class 77_odst_h_anprc_521: 77_odst_anprc_521
+	{
+		scope=2;
+		scopeCurator=2;
+		author="77bn SMU/ODST Bn";
+		displayName="[77th] AN/PRC-521 - Hardened";
+		hiddenSelections[] = {"camo","camo2","B_Medic","B_Addons"};
+		hiddenSelectionsMaterials[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"77_Armor\Data\Backpacks\77_odst_compacks_co.paa",
+			"77_Armor\Data\Backpacks\77_odst_h_compack_co.paa"
+		};
+	};	
+};
+class CfgNonAIVehicles
+{
+	class ProxyRetex;
+	class Proxypara_wreck: ProxyRetex
+	{
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		model="";
+	};
 };
 class CfgAddons
 {
