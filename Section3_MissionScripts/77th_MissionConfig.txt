@@ -178,7 +178,7 @@ force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 1;
+force force ace_medical_AIDamageThreshold = 0.502169;
 force force ace_medical_bleedingCoefficient = 1;
 force force ace_medical_blood_bloodLifetime = 540;
 force force ace_medical_blood_enabledFor = 2;
@@ -194,15 +194,15 @@ force force ace_medical_gui_enableSelfActions = true;
 force force ace_medical_gui_maxDistance = 3;
 force force ace_medical_gui_openAfterTreatment = true;
 force force ace_medical_ivFlowRate = 1;
-force force ace_medical_limping = 2;
+force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 1;
-force force ace_medical_playerDamageThreshold = 3.01308;
+force force ace_medical_playerDamageThreshold = 2;
 force force ace_medical_spontaneousWakeUpChance = 0.75;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 1.99862;
 force force ace_medical_statemachine_AIUnconsciousness = false;
 force force ace_medical_statemachine_cardiacArrestTime = 155;
-force force ace_medical_statemachine_fatalInjuriesAI = 1;
-force force ace_medical_statemachine_fatalInjuriesPlayer = 0;
+force force ace_medical_statemachine_fatalInjuriesAI = 0;
+force force ace_medical_statemachine_fatalInjuriesPlayer = 1;
 force ace_medical_treatment_advancedBandages = 1;
 force force ace_medical_treatment_advancedDiagnose = true;
 force force ace_medical_treatment_advancedMedication = true;
@@ -453,6 +453,7 @@ acex_volume_remindIfLowered = false;
 acex_volume_showNotification = true;
 
 // Achilles - Available Factions
+Achilles_var_77bn_ODST = true;
 Achilles_var_BLU_CTRG_F = true;
 Achilles_var_BLU_F = true;
 Achilles_var_BLU_G_F = true;
@@ -488,6 +489,7 @@ Achilles_var_LM_OPCAN_UNSC_MC_INF = true;
 Achilles_var_LM_OPCAN_URA = true;
 Achilles_var_OPF_F = true;
 Achilles_var_OPF_G_F = true;
+Achilles_var_OPF_GEN_F = true;
 Achilles_var_OPF_R_F = true;
 Achilles_var_OPF_T_F = true;
 Achilles_var_OPF_V_F = true;
@@ -654,10 +656,6 @@ force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
 cba_optics_usePipOptics = true;
 
-// GRAD slingHelmet
-force GRAD_slingHelmet_additionalList = "";
-force GRAD_slingHelmet_allowAll = false;
-
 // GRAD Trenches
 grad_trenches_functions_allowBigEnvelope = true;
 grad_trenches_functions_allowCamouflage = true;
@@ -716,10 +714,6 @@ force lambs_eventhandlers_ExplosionReactionTime = 9;
 
 // LAMBS Danger WP
 force lambs_wp_autoAddArtillery = false;
-
-// Tactical Weapon Swap Option
-Swap the gun quickly without an animation process. = true;
-You can wear another weapon in the state of a pistol. = false;
 
 // TFAR - Clientside settings
 TFAR_default_radioVolume = 6;
